@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>11월 2일</title>
+  </head>
+  <body>
+    <h1><a href="Notion.html" title="목차">Notion</a></h1>
+    <p>
+      - web sever for chrome으로 웹 서버 설치해서 사용하는 방법 공부<br>
+      - web sever for chrome 들어가서 서버 키기만 하면 됨
+    </p>
+    <p>
+      - iframe 태그 동영상 삽입 태그 정확한 사용 방법은 모르겠지만 <br>
+      width랑 height로 가로 세로 설정하고 src로 주소 삽입, title로 마우스 갖다 댔을 때 이름 띄우기하는 것 같음<br>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/7T7r_oSp0SE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </p>
+    <p>
+      - 웹 사이트에 댓글 기능을 추가하는 것은 backend 작업이 필요하고 스팸차단 기능 등 복잡하기 때문에 지금 html만으로는 할 수 없음<br>
+      - 그러나 disqus에서 제공하는 코드를 통해 웹 사이트에 쉽게 댓글 기능을 추가할 수 있음<br>
+      - disqus를 활용한 댓글 기능은 파일로 웹 사이트를 열었을 때는 사용할 수 없고 127.1.1.0/221102.html 로 접속하는 등 서버로 접속했을 때만 사용할 수 있음<br>
+      <div id="disqus_thread"></div>
+      <script>
+          /**
+          *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+          *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+          /*
+          var disqus_config = function () {
+          this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+          this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+          };
+          */
+          (function() { // DON'T EDIT BELOW THIS LINE
+          var d = document, s = d.createElement('script');
+          s.src = 'https://web1-0i2cagllhm.disqus.com/embed.js';
+          s.setAttribute('data-timestamp', +new Date());
+          (d.head || d.body).appendChild(s);
+          })();
+      </script>
+      <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </p>
+    <p>
+      - 채팅 기능을 추가하는 것 또한 많은 기술이 필요한 지금 내가 만들 수 없는 기능임<br>
+      - 그러나 tawk에서 제공하는 코드를 통해 웹 사이트에 쉽게 채팅 기능을 추가할 수 있음<br>
+      - 또 마찬가지로 서버에 연결을 해야 기능을 사용할 수 있음<br>
+      <!--Start of Tawk.to Script-->
+      <script type="text/javascript">
+      var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+      (function(){
+      var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+      s1.async=true;
+      s1.src='https://embed.tawk.to/63621b19b0d6371309ccd4fb/1ggrjjo08';
+      s1.charset='UTF-8';
+      s1.setAttribute('crossorigin','*');
+      s0.parentNode.insertBefore(s1,s0);
+      })();
+      </script>
+      <!--End of Tawk.to Script-->
+    </p>
+  </body>
+</html>
